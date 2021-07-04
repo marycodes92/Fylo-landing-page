@@ -215,7 +215,7 @@ button:hover {
 /* The Testimonial Section */
 .section-testimony {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 200px;
 }
@@ -229,13 +229,18 @@ button:hover {
   padding: var(--padding-sm);
 }
 
+
+.quotes{
+  position: relative;
+  left: 5rem;
+  bottom: 2rem;
+  z-index:-1;
+}
+
 .section-testimony-item-content {
   margin: 30px;
 }
 
-/* .section-testimony-item:first-child {
-  margin-left: 0;
-} */
 
 .section-testimony-item-person {
   display: flex;
@@ -360,8 +365,10 @@ footer p {
 .section-footer-contact-item {
   display: flex;
   grid-area: contact;
-  flex-direction: column;
-  align-items: center;
+  margin:.3rem;
+}
+.section-footer-contact-item img{
+margin-right: .5rem;
 }
 
 .section-footer-contact-item p:first-child {
